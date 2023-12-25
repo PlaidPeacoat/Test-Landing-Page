@@ -1,0 +1,76 @@
+/* Navbar container */
+.navbar {
+  background-color: #a71818; /* Dark background */
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Align items vertically */
+  padding: 0.5rem 1rem; /* Padding for spacing */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Navbar brand/logo */
+.navbar-brand {
+  color: #f2e9e4; /* Light color for brand text */
+  font-weight: bold; /* Make the brand text bold */
+  font-size: 1.8rem; /* Increase the font size */
+  margin-right: auto; /* Push everything else to the right */
+}
+
+.navbar button {
+  background-color: #a71818; /* Button background color */
+  color: #ffffff; /* Button text color */
+  border: none; /* Remove border */
+  padding: 0.5rem 1rem; /* Padding inside the button */
+  margin-left: 10px; /* Space between buttons */
+  cursor: pointer; /* Cursor pointer on hover */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.navbar button:hover {
+  background-color: #c9ada7; /* Lighter background on hover */
+}
+
+.navbar button:focus {
+  outline: none; /* Remove focus outline */
+}
+
+/* Navbar links */
+.navbar-nav .nav-link {
+  color: #f8f9fa; /* Light color for nav links */
+  margin-right: 1rem; /* Space between links */
+  transition: color 0.3s ease-in-out; /* Transition for hover effect */
+}
+
+/* Navbar link hover effect */
+.navbar-nav .nav-link:hover {
+  color: #007bff; /* Change color on hover */
+  text-decoration: none; /* Remove underline on hover */
+}
+
+/* Active nav link */
+.navbar-nav .nav-item.active .nav-link {
+  font-weight: bold; /* Bold for active link */
+  color: #007bff; /* Different color for active link */
+}
+
+
+@media (max-width: 768px) {
+  .navbar-nav .nav-link {
+    padding: 0.5rem 1rem; /* Add padding to links on small screens */
+    display: block; /* Stack the links vertically */
+  }
+}
+
+
+@media (max-width: 768px) {
+  .navbar-nav .nav-link {
+    padding: 0.5rem 1rem; /* Add padding to links on small screens */
+    display: block; /* Stack the links vertically */
+  }
+}
+
+.h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}

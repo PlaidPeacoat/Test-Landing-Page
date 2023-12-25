@@ -1,0 +1,72 @@
+/* Container for the SVG to control its size */
+.svg-container {
+  width: 100%; /* Full width of the container */
+  max-width: 400px; /* Maximum width */
+  margin: auto; /* Center in the dialog */
+  display: flex;
+  justify-content: center;
+}
+
+/* Style for the SVG */
+.svg-container svg {
+  width: 100%; /* Make SVG responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+h2 {
+  text-align: center;
+}
+
+.button-container {
+  width: 100%; /* Match width of SVG container */
+  display: flex;
+  justify-content: center; /* Center button */
+  margin-top: 20px; /* Space above the button */
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: #4CAF50; /* Green background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  justify-content: center;
+  align-items: center;
+}
+
+.button:hover {
+  background-color: #45a049; /* Darker shade on hover */
+}
+
+
+@keyframes fall {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(500px); /* Adjust as needed */
+  }
+}
+
+.snowflake {
+  animation: fall 10s infinite; /* Adjust duration as needed */
+  animation-timing-function: linear;
+}
+
+
+@keyframes swingArm {
+  0%, 100% {
+    transform: rotate(0deg); /* Arm in the initial position */
+  }
+  50% {
+    transform: rotate(10deg); /* Adjust the angle as needed */
+  }
+}
+
+
+#santaRightArmandBag {
+  transform-origin: 1001px 1370px; /* Adjust this to the shoulder position */
+  animation: swingArm 2s ease-in-out infinite;
+}

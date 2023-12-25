@@ -1,0 +1,9 @@
+.banner {
+  width: 100%; /* Full width */
+  height: 400px; /* Adjust the height as needed */
+  background-image: url('https://i.gifer.com/Jj9.gif'); /* Path to your banner image */
+  background-position: top; /* Center the image */
+  background-size: cover; /* Cover the entire area without stretching */
+  overflow: hidden; /* Hide the overflow */
+}
+
