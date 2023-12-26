@@ -1,0 +1,13 @@
+<div class="employee-cards">
+  <mat-card class="card" *ngFor="let employee of employees">
+    <div class="employee-image" [style.background-image]="'url(' + employee.imageUrl + ')'"></div>
+    <mat-card-header>
+      <mat-card-title>{{ employee.name }}</mat-card-title>
+      <mat-card-subtitle>{{ employee.jobTitle }}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <p>{{ employee.bio }}</p>
+    </mat-card-content>
+  </mat-card>
+</div>
+

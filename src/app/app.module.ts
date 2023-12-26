@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { MatCardModule } from '@angular/material/card';
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
-import { CardComponent } from './card/card.component';
+import { EmployeeCardComponent } from './employee-card/employee-card.component';
 import { FrontPageComponent } from './front-page/front-page.component';
 import { BannerComponent } from './banner/banner.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -17,13 +17,15 @@ import { MatMenuModule } from '@angular/material/menu';
     NavBarComponent,
     FrontPageComponent,
     BannerComponent,
-    MerryChristmasDialogComponent
+    MerryChristmasDialogComponent,
+    EmployeeCardComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MatDialogModule,
-    MatMenuModule
+    MatMenuModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

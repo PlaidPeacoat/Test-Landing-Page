@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Full height of the viewport */
+  height: 50vh; /* Full height of the viewport */
 }
 
 /* Custom button styling */
@@ -20,4 +20,15 @@
 
 .button:hover {
   background-color: #45a049; /* Darker shade on hover */
+}
+
+.employee-card {
+  padding-top: 30px;
+}
+
+.front-page-title {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: #cb0808;
 }
